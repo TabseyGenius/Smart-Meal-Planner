@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Meal Planner</title>
+    <link rel="stylesheet" href="meal.css">
+<link rel="stylesheet" href="manifest.json">
+</head>
+<body>
+    <header>
+        <h1>Smart Meal Planner</h1>
+        <p>Discover what you can cook with the ingredients you have</p>
+    </header>
+    <main>
+        <section id="search">
+            <form id="searchForm">
+                <input 
+                    type="text" 
+                    placeholder="Enter ingredients (e.g., rice, tomatoes, chicken)" 
+                    id="searchBar" 
+                    aria-label="Enter ingredients">
+                <button type="button" onclick="searchRecipes()" aria-label="Search recipes">Search</button>
+            </form>
+        </section>
+        <section id="recipes">
+            <h2>Recipe Suggestions</h2>
+            <div id="recipeList">
+                <!-- Recipes will be dynamically inserted here -->
+            </div>
+        </section>
+        <section id="recipeDetails" style="display: none;">
+            <h2>Recipe Details</h2>
+            <div id="recipeInfo">
+                <!-- Recipe details will appear here -->
+            </div>
+            <button id="backButton" onclick="goBack()" aria-label="Go back to suggestions">Back to Suggestions</button>
+        </section>
+    </main>
+    <footer>
+        <p>© 2024 Smart Meal Planner. All rights reserved.</p>
+    </footer>
+    <script src="meal.js"></script>
+</body>
+</html>
+
